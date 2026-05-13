@@ -7,6 +7,7 @@ function getSeasonAdvice(season) {
         return "No advice for this season.\n";
     }
 }
+
 function getPlantAdvice(plantType) {
     if (plantType === "flower") {
         return "Use fertiliser to encourage blooms.";
@@ -16,8 +17,11 @@ function getPlantAdvice(plantType) {
         return "No advice for this type of plant.";
     }
 }
+
 let season = prompt("Enter season:");
 let plantType = prompt("Enter plant type:");
+
 let advice = getSeasonAdvice(season);
 advice += getPlantAdvice(plantType);
+
 console.log(advice);
